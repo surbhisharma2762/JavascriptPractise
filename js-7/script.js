@@ -3,7 +3,7 @@ const createbtn = document.querySelector(".btn");
 const notes = document.querySelector(".input-box");
 
 function showNotes(){
-    notesContainer.innerHTML = localStorage.getItem("notes");
+    notesContainer.innerHTML = localStorage.getItem("notes");   //The showNotes function gets the saved notes (if any) from localStorage and sets them inside the notesContainer element.
 }
 showNotes()
 function updateStorage(){
@@ -20,14 +20,14 @@ createbtn.addEventListener ("click",()=>{
 })
 notesContainer.addEventListener("click", function(e){
     if(e.target.tagName === "IMG"){
-        e.target.parentElement.remove();
-        updateStorage();
+        e.target.parentElement.remove(); 
+        updateStorage();    //after deleting it should be updated
     }
     else if(e.target.tagName === "P"){
         notes = document.querySelectorAll(".input-box");
-        notes.forEach(nt => {
-            nt.onkeyup = function(){
-                updateStorage();
+        notes.forEach(nt => {       //represents each individual note
+            nt.onkeyup = function(){    //onkeyup event handler
+                updateStorage();        //updates storage when we start typing in the p tag
             }
         });
     }
