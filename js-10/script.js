@@ -7,4 +7,11 @@ function showToast(msg){
     toast.classList.add('toast');
     toast.innerHTML = msg;
     toastBox.appendChild(toast);
+
+    if(msg.includes('error')){
+        toast.classList.add('error');
+    }
+    if(msg.includes('Invalid')){
+        toast.classList.add('Invalid');
+    }
 }
