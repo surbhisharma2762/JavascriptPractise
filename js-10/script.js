@@ -14,4 +14,7 @@ function showToast(msg){
     if(msg.includes('Invalid')){
         toast.classList.add('Invalid');
     }
+    setTimeout(()=>{
+        toast.remove();
+    },6000)
 }
