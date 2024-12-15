@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>00:00:00</h1>
+        <h1 id="displayTime">00:00:00</h1>
         <div class="buttons">
-            <img src="pause.svg">
-            <img src="play.svg">
-            <img src="reset.svg">
+            <img src="pause.svg" onclick="watchStop()">
+            <img src="play.svg" onclick="watchStart()">
+            <img src="reset.svg" onclick="watchReset()">
         </div>
     </div>
     <script src="script.js"></script>
