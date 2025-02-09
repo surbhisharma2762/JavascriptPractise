@@ -12,6 +12,11 @@
     align-items: center;
     justify-content: center;
 }
+.input-box{
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+}
 .input-box input{
     width: 100%;
     height: 60px;
@@ -20,4 +25,13 @@
     outline: none;
     color: #fff;
     background: transparent;
+}
+button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position:absolute;
+    top: 50%;
 }
