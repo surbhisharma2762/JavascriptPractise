@@ -38,12 +38,12 @@ body{
                  0px 12px 10px -10px rgba(0, 0, 0, 0.5);
 }
 #number{
-    font-weight: 600px;
+    font-weight: 600;
     color: #555;
 }
 circle{
     fill: none;
-    stroke: url(#GardientColor);
+    stroke: url(#GradientColor);
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
